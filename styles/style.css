@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap");
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Common Styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Styles */
+
+header nav .navbar-brand {
+  font-size: 22px;
+}
+
+header .navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+/* Carousel Styles */
+.carousel-inner h5 {
+  font-size: 48px;
+}
+
+@media screen and (max-width: 576px) {
+  .header-slider .carousel-inner {
+    min-height: 600px;
+  }
+
+  .header-slider .carousel-item {
+    min-height: inherit;
+  }
+
+  .header-slider .carousel-item img {
+    transform: scale(2) translate(20px, 45px);
+  }
+
+  .carousel-inner h5 {
+    font-size: 24px;
+  }
+}
