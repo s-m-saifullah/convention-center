@@ -10,6 +10,7 @@ font-family: 'Roboto', sans-serif;
 /* Common Styles */
 body {
   font-family: "Poppins", sans-serif;
+  margin-bottom: 100px;
 }
 
 /* Header Styles */
@@ -27,7 +28,61 @@ header .navbar-nav .nav-link {
   font-size: 48px;
 }
 
-@media screen and (max-width: 576px) {
+/* Explore Album */
+#explore-album {
+  margin: 100px 0;
+}
+
+.explore-album-right {
+  position: relative;
+}
+
+#explore-album .toast {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: white;
+  border: none;
+  border-left: 5px solid #0b5ed7;
+  border-radius: 0;
+  width: max-content;
+}
+
+#explore-album a {
+  border-radius: 0;
+}
+
+#explore-album .flex-md-row {
+  gap: 20px;
+}
+
+/* Our Packages */
+#our-packages .section-heading {
+  margin-bottom: 100px;
+}
+
+#our-packages .card {
+  border: none;
+}
+
+#our-packages .card .choose-plan {
+  background-color: #f496d144;
+  border-radius: 24px;
+}
+
+#our-packages .hot-card {
+  background-color: #3f87f5;
+  border-radius: 26px;
+  color: #ffffff;
+  transform: translateY(-60px);
+  box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+}
+
+#our-packages .hot-card .choose-plan {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
   .header-slider .carousel-inner {
     min-height: 600px;
   }
@@ -42,5 +97,17 @@ header .navbar-nav .nav-link {
 
   .carousel-inner h5 {
     font-size: 24px;
+  }
+
+  #explore-album .toast {
+    top: 0;
+  }
+
+  #our-packages .section-heading {
+    margin-bottom: 30px;
+  }
+
+  #our-packages .hot-card {
+    transform: translateY(-30px);
   }
 }
